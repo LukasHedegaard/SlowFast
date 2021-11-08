@@ -55,13 +55,13 @@ SOLVER:
 MODEL:
   NUM_CLASSES: 157
   ARCH: slowfast
-  MODEL_NAME: PTVSlowFast
+  MODEL_NAME: SlowFast
   LOSS_FUNC: bce_logit
   HEAD_ACT: sigmoid
   DROPOUT_RATE: 0.5
 TEST:
   ENABLE: True
-  DATASET: ptvcharades
+  DATASET: charades
   BATCH_SIZE: 64
   NUM_ENSEMBLE_VIEWS: 10
   NUM_SPATIAL_CROPS: 3
